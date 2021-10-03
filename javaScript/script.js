@@ -19,4 +19,4 @@ generateBtn.addEventListener("click", writePassword);
 
 function generatePassword() {
   window.confirm("hello")
-}
+};
