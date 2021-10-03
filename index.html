@@ -22,24 +22,30 @@
         <section class="criteria">
           <h3>Password Criteria:</h3>
           <div>
-            Include uppercase letters?
-            <input type="checkbox" name="uletterCheckbox" id="uletters">
+            <h4>Include uppercase letters?</h4>
+              Yes <input type="radio" name="upperRadio" id="upperTrue">
+              No <input type="radio" name="upperRadio" id="upperFalse">
           </div>
           <div>
-            Include lowercase letters?
-            <input type="checkbox" name="lletterCheckbox" id="lletters">
+            <h4>Include lowercase letters?</h4>
+              Yes <input type="radio" name="lowerRadio" id="lowerTrue">
+              No <input type="radio" name="lowerRadio" id="lowerFalse">
           </div>
           <div>
-            Include numbers?
-            <input type="checkbox" name="numberCheckbox" id="number">
+            <h4>Include numbers?</h4>
+              Yes <input type="radio" name="numberRadio" id="numberTrue">
+              No <input type="radio" name="numberRadio" id="numberFalse">
           </div>
           <div>
-            Include special characters?
-            <input type="checkbox" name="specialCharacters" id="speChar">
+            <h4>Include special characters?</h4>
+              Yes <input type="radio" name="specialRadio" id="specialTrue">
+              No <input type="radio" name="specialRadio" id="specialFalse">
           </div>
           <div>
-            Password character length? 8-128 characters are required.
-            <input type="number" name="length" id="pwdlgth">
+            <h4>Password character length? (Between 8 and 128)</h4>
+            <input type="range" id="myRange" max="128" min="8" value="8" oninput="num.value = this.value">
+            <br>
+            <output id="num">8</output>
           </div>
         </section>
         <div class="card-body" hidden>

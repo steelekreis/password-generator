@@ -43,8 +43,8 @@ header {
   text-align: center;
 }
 
-.criteria {
-padding-bottom: 25px;
+.criteria h3 {
+  padding-bottom: 15px;
 }
 
 .criteria::after {
