@@ -26,7 +26,6 @@ function showAndHide() {
 // Write password to the #password input
 function writePassword() {
   var length = document.getElementById("num").value;
-  console.log(length);
   var empty = "";
   incUppers.checked ? (empty += upper) : "";
   incNumbers.checked ? (empty += numbers) : "";
