@@ -50,12 +50,8 @@ header {
 
 .criteria h4 {
   padding-bottom: 15px;
-  display: none;
 }
 
-.criteria div {
-  display: none;
-}
 
 .criteria::after {
   content: " ";
@@ -66,8 +62,12 @@ header {
 }
 
 .card-body {
-  min-height: 100px;
-  display: none;
+  height: auto;
+}
+
+.card-body textarea {
+  height: fit-content;
+  max-height: max-content;
 }
 
 .card-footer {

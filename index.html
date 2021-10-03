@@ -23,26 +23,26 @@
           <h4 id="critHead">Please select the criteria for your password:</h4>
           <div id="uR">
             Uppercase letters?
-            <input type="checkbox" name="" id="">
+            <input type="checkbox" name="" id="uppers">
           </div>
           <div id="lR">
             Lowercase letters?
-            <input type="checkbox" name="" id="">
+            <input type="checkbox" name="" id="lowers">
           </div>  
           <div id="nR">
             Numbers?
-            <input type="checkbox" name="" id="">
+            <input type="checkbox" name="" id="numbers">
           </div>
           <div id="sR">
             Special characters?
-            <input type="checkbox" name="" id="">
+            <input type="checkbox" name="" id="specChar">
           </div>
           <div id="lenRan">
             Password character length? (Between 8 and 128)
 
-            <input type="range" id="myRange" max="128" min="8" value="8" oninput="num.value = this.value">
+            <input type="range" id="length" max="128" min="8" oninput="num.value = this.value">
 
-            <output id="num">8</output>
+            <output id="num">60</output>
           </div>
         </section>
         <div class="card-body">
