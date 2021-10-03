@@ -46,12 +46,16 @@ header {
 .criteria {
   display: flex;
   flex-direction: column;
+  display: none;
 }
 
-.criteria h4 {
+.criteria div {
   padding-bottom: 15px;
 }
 
+#generate {
+  display: none;
+}
 
 .criteria::after {
   content: " ";
@@ -63,11 +67,7 @@ header {
 
 .card-body {
   height: auto;
-}
-
-.card-body textarea {
-  height: fit-content;
-  max-height: max-content;
+  display: none;
 }
 
 .card-footer {
