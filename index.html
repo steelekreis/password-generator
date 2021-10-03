@@ -20,35 +20,32 @@
           <button id="generate" class="btn" hidden>Generate Password</button>
         </div>
         <section class="criteria">
-          <h3>Password Criteria:</h3>
-          <div>
-            <h4>Include uppercase letters?</h4>
-              Yes <input type="radio" name="upperRadio" id="upperTrue">
-              No <input type="radio" name="upperRadio" id="upperFalse">
+          <h4 id="critHead">Please select the criteria for your password:</h4>
+          <div id="uR">
+            Uppercase letters?
+            <input type="checkbox" name="" id="">
           </div>
-          <div>
-            <h4>Include lowercase letters?</h4>
-              Yes <input type="radio" name="lowerRadio" id="lowerTrue">
-              No <input type="radio" name="lowerRadio" id="lowerFalse">
+          <div id="lR">
+            Lowercase letters?
+            <input type="checkbox" name="" id="">
+          </div>  
+          <div id="nR">
+            Numbers?
+            <input type="checkbox" name="" id="">
           </div>
-          <div>
-            <h4>Include numbers?</h4>
-              Yes <input type="radio" name="numberRadio" id="numberTrue">
-              No <input type="radio" name="numberRadio" id="numberFalse">
+          <div id="sR">
+            Special characters?
+            <input type="checkbox" name="" id="">
           </div>
-          <div>
-            <h4>Include special characters?</h4>
-              Yes <input type="radio" name="specialRadio" id="specialTrue">
-              No <input type="radio" name="specialRadio" id="specialFalse">
-          </div>
-          <div>
-            <h4>Password character length? (Between 8 and 128)</h4>
+          <div id="lenRan">
+            Password character length? (Between 8 and 128)
+
             <input type="range" id="myRange" max="128" min="8" value="8" oninput="num.value = this.value">
-            <br>
+
             <output id="num">8</output>
           </div>
         </section>
-        <div class="card-body" hidden>
+        <div class="card-body">
           <textarea
             readonly
             id="password"

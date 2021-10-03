@@ -43,8 +43,18 @@ header {
   text-align: center;
 }
 
-.criteria h3 {
+.criteria {
+  display: flex;
+  flex-direction: column;
+}
+
+.criteria h4 {
   padding-bottom: 15px;
+  display: none;
+}
+
+.criteria div {
+  display: none;
 }
 
 .criteria::after {
@@ -54,16 +64,10 @@ header {
   background: #e7e9eb;
   height: 2px;
 }
-.card-header::after {
-  content: " ";
-  display: block;
-  width: 100%;
-  background: #e7e9eb;
-  height: 2px;
-}
 
 .card-body {
   min-height: 100px;
+  display: none;
 }
 
 .card-footer {
