@@ -14,18 +14,41 @@
       </header>
       <div class="card">
         <div class="card-header">
-          <h2>Generate a Password</h2>
+          <h2></h2>
         </div>
-        <div class="card-body">
+        <div class="card-footer">
+          <button id="generate" class="btn" hidden>Generate Password</button>
+        </div>
+        <section class="criteria">
+          <h3>Password Criteria:</h3>
+          <div>
+            Include uppercase letters?
+            <input type="checkbox" name="uletterCheckbox" id="uletters">
+          </div>
+          <div>
+            Include lowercase letters?
+            <input type="checkbox" name="lletterCheckbox" id="lletters">
+          </div>
+          <div>
+            Include numbers?
+            <input type="checkbox" name="numberCheckbox" id="number">
+          </div>
+          <div>
+            Include special characters?
+            <input type="checkbox" name="specialCharacters" id="speChar">
+          </div>
+          <div>
+            Password character length? 8-128 characters are required.
+            <input type="number" name="length" id="pwdlgth">
+          </div>
+        </section>
+        <div class="card-body" hidden>
           <textarea
             readonly
             id="password"
             placeholder="Your Secure Password"
             aria-label="Generated Password"
           ></textarea>
-        </div>
-        <div class="card-footer">
-          <button id="generate" class="btn">Generate Password</button>
         </div>
       </div>
     </div>

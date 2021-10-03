@@ -40,8 +40,20 @@ header {
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
+  text-align: center;
 }
 
+.criteria {
+padding-bottom: 25px;
+}
+
+.criteria::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  background: #e7e9eb;
+  height: 2px;
+}
 .card-header::after {
   content: " ";
   display: block;
@@ -69,7 +81,9 @@ header {
 .card-footer::after {
   content: " ";
   display: block;
-  clear: both;
+  width: 100%;
+  background: #e7e9eb;
+  height: 2px;
 }
 
 .btn {

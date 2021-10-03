@@ -11,6 +11,8 @@ function writePassword() {
 
   passwordText.value = password;
 
+  document.getElementsByClassName(card-body) Element.style
+
 }
 
 // Add event listener to generate button
@@ -18,5 +20,10 @@ generateBtn.addEventListener("click", writePassword);
 
 
 function generatePassword() {
-  window.confirm("hello")
+
+
+
+
+
+
 };
